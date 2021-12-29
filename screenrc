@@ -4,8 +4,6 @@ caption string "%{= 99} "
 
 hardstatus off
 
-caption off
-
 # navigating regions with Ctrl-arrows
 bindkey "^[[1;5D" focus left
 bindkey "^[[1;5C" focus right
