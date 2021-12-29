@@ -1,0 +1,15 @@
+# make pane caption bar the same color as my terminal bg and no text
+
+caption string "%{= 99} "
+
+hardstatus off
+
+caption off
+
+# navigating regions with Ctrl-arrows
+bindkey "^[[1;5D" focus left
+bindkey "^[[1;5C" focus right
+bindkey "^[[1;5A" focus up
+bindkey "^[[1;5B" focus down
+
+startup_message off
