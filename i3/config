@@ -227,8 +227,7 @@ bindsym $mod+Pause mode "$mode_system"
 # Start polybar instead
 exec --no-startup-id polybar example
 
-gaps inner 20
+gaps inner 7
 default_border none
 default_floating_border none
 for_window [class="^.*"] border pixel 0
-border_radius 20
