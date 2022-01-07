@@ -149,5 +149,3 @@ My config is [here](https://github.com/lowpoly1/dotfiles/tree/main/powerline) as
 ### firefox extensions
 
 I use [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) to make everything dark mode, [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us) to set my own themes for certain websites (my stylesheets can be found in [my dotfiles](https://github.com/lowpoly1/dotfiles/)), and [Tabliss](https://addons.mozilla.org/en-US/firefox/addon/tabliss) for a custom new tab page. For my firefox theme, I use a slightly modified version of the [Nord Polar Dark](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) theme. For instructions on how to customize a firefox theme, see (i havent made the guide yet).
-
-
