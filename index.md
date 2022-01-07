@@ -115,6 +115,27 @@ The bar is probably one of the hardest things to set up, but you can start with 
 
 You may notice that there is no way to change the wallpaper in i3. `feh` is a simple image viewer that can also be used to set wallpapers, and you can put its command in your i3 config, so it runs at startup.
 
+### powerline-shell
+
+You can use powerline to customize your shell prompt. Install powerline, then add the following to your `~/.bashrc`:
+
+```bash
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+```
+You can generate the default config in the default location by running these commands:
+
+```bash
+mkdir -p ~/.config/powerline-shell && \
+powerline-shell --generate-config > ~/.config/powerline-shell/config.json
+```
+My config is [here](https://github.com/lowpoly1/dotfiles/tree/main/powerline) as an example.
+
 ### other fun applications
 
 - calcurse - terminal-based calculator and todo list
