@@ -6,12 +6,6 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
+PS1='\[\e[34m\]╭\[$(tput setaf 62)\] hist#: \[\!\]\n\[\e[34m\]╞═🢖\[$(tput setaf 41)\] \$ \[$(tput sc)\n\e[34m\]╰ $(tput setaf 173)$(pwd)$(tput rc)\e[0m'
+PS0='\[\n\]'
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
-
-unimatrix -c green -l S -s 97 -w
